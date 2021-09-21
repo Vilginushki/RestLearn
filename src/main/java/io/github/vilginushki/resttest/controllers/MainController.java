@@ -52,7 +52,7 @@ public class MainController {
                 .body("Employee added");
     }
 
-    //Edit employee TODO: not working xD
+    //Edit employee
     @PutMapping("/employees/{id}")
     ResponseEntity<Employee> editOne(@PathVariable Long id, @RequestBody Employee e) {
         e.setId(id);
